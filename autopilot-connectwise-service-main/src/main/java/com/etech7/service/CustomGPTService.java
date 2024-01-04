@@ -31,7 +31,7 @@ public class CustomGPTService {
 
         return webClient.post()
                 .uri("/v1/chat/completions")
-                .header("Authorization", "Bearer " + "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")
+                .header("Authorization", "Bearer " + "GPTKey")
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(Mono.just(chatRequest), ChatRequest.class)
                 .retrieve()
